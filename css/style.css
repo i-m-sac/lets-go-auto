@@ -14,6 +14,10 @@
     border-color: #036BCC!important;
 }
 
+.text-primary {
+    color: #036BCC!important;
+}
+
 .py-6 {
     padding-top: 6rem;
     padding-bottom: 6rem;
