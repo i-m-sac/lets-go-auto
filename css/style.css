@@ -1,9 +1,17 @@
 /********** Template CSS **********/
 :root {
-    --primary: #F3BD00;
+    --primary: #036BCC;
     --secondary: #757575;
     --light: #F3F6F8;
     --dark: #0C2B4B;
+}
+
+.bg-primary {
+    background-color: #036BCC!important;
+}
+.btn-primary {
+    background-color: #036BCC!important;
+    border-color: #036BCC!important;
 }
 
 .py-6 {
