@@ -10,8 +10,8 @@
         }, 1);
     };
     spinner();
-    
-    
+
+
     // Initiate the wowjs
     new WOW().init();
 
@@ -24,8 +24,8 @@
             $('.sticky-top').removeClass('shadow-sm').css('top', '-100px');
         }
     });
-    
-    
+
+
     // Back to top button
     $(window).scroll(function () {
         if ($(this).scrollTop() > 300) {
@@ -35,7 +35,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -49,6 +49,32 @@
         loop: true,
     });
 
-    
+    $(window).scroll(function (event) {
+        Scroll();
+    });
+
+    function Scroll() {
+        const sections = document.querySelectorAll(".main-container");
+        const nav = document.querySelectorAll(".navbar-nav a");
+        // change active nav link based on scroll
+        var current = "";
+        sections.forEach((section) => {
+            const sectionTop = section.offsetTop;
+            if (scrollY >= sectionTop - 60) {
+                console.log("sectijon", section, scrollY.sectionTop - 60)
+                current = section.getAttribute("id");
+                console.log("sectijon", section, current)
+            }
+        });
+
+        nav.forEach((li) => {
+            console.log("current", current, li, li.classList)
+            li.classList.remove("active");
+            if (li.classList.contains(current)) {
+                li.classList.add("active");
+            }
+        });
+    }
+
 })(jQuery);
 
