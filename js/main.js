@@ -61,14 +61,11 @@
         sections.forEach((section) => {
             const sectionTop = section.offsetTop;
             if (scrollY >= sectionTop - 60) {
-                console.log("sectijon", section, scrollY.sectionTop - 60)
                 current = section.getAttribute("id");
-                console.log("sectijon", section, current)
             }
         });
 
         nav.forEach((li) => {
-            console.log("current", current, li, li.classList)
             li.classList.remove("active");
             if (li.classList.contains(current)) {
                 li.classList.add("active");
