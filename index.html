@@ -376,23 +376,7 @@
                 <h1 class="display-6 mb-4">We Have Great Experience Of Driving</h1>
             </div>
             <div class="row g-0 team-items d-flex justify-content-center h-100">
-                <div class="col-lg-3 col-md-6 wow fadeInUp " data-wow-delay="0.1s mh-100">
-                    <div class="team-item position-relative">
-                        <div class="position-relative">
-                            <img class="img-fluid" src="img/user.jpeg" alt="">
-                            <!-- <div class="team-social text-center">
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-facebook-f"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-twitter"></i></a>
-                                <a class="btn btn-square btn-outline-primary border-2 m-1" href=""><i class="fab fa-instagram"></i></a>
-                            </div> -->
-                        </div>
-                        <div class="bg-light text-center p-4">
-                            <h5 class="mt-2">Cherlann O'Flynn</h5>
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-5 card wow fadeInUp data-wow-delay="0.1s">
+                <div class=" card wow fadeInUp data-wow-delay="0.1s">
                     <h5 class="card-header">Cherlann O'Flynn</h5>
                     <div class="card-body">
                         <div class="card-body">
@@ -414,17 +398,24 @@
 
     <!-- contact-start -->
 
-    <div class="container-xxl py-6 courses main-container" id="contact">
+    <div class="container-xxl py-6 courses main-container" style="min-height: auto;" id="contact">
         <div class="container d-flex justify-content-center">
             <div class="col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                 <h3 class="text-primary text-uppercase mb-2">Contact Us</h3>
                 <h4 class="mb-4">Ready to Hit the Road? Reach out today!</h4>
-                <form>
+                <form action="https://formsubmit.co/letsgoautogalway@gmail.com" method="POST">
                     <div class="row g-3">
                         <div class="col-md-6">
                             <div class="form-floating">
                                 <input type="text" class="form-control border-0 bg-light" id="name" placeholder="Your Name">
                                 <label for="name">Your Name</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="form-floating">
+                                <input type="number" class="form-control border-0 bg-light" id="subject" placeholder="Subject">
+                                <label for="subject">Phone</label>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -433,7 +424,7 @@
                                 <label for="email">Your Email</label>
                             </div>
                         </div>
-                        <div class="col-12">
+                        <div class="col-md-6">
                             <div class="form-floating">
                                 <input type="text" class="form-control border-0 bg-light" id="subject" placeholder="Subject">
                                 <label for="subject">Subject</label>
