@@ -361,3 +361,8 @@
 .copyright a:hover {
     color: var(--light);
 }
+
+.hover-pointer:hover {
+    color: var(--light);
+    cursor: pointer;
+}
